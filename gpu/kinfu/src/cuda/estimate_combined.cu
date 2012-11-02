@@ -57,10 +57,7 @@ namespace pcl
       struct plus
       {
         __forceinline__ __device__ float
-        operator () (const float_type &lhs, const volatile float_type& rhs) const 
-        {
-          return (lhs + rhs);
-        }
+        operator () (float_type lhs, float_type rhs) const { return (lhs + rhs); }
       };
 
       Mat33 Rcurr;

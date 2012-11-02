@@ -67,7 +67,7 @@ namespace pcl
 {
   namespace gpu
   {
-    Eigen::Vector3f rodrigues2(const Eigen::Matrix3f& matrix);
+    PCL_EXPORTS Eigen::Vector3f rodrigues2(const Eigen::Matrix3f& matrix);
   }
 }
 
