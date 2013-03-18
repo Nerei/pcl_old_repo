@@ -51,9 +51,7 @@ namespace pcl
       struct plus
       {
         __forceinline__ __device__ int
-        operator () (const int &lhs, const volatile int& rhs) const {
-          return lhs + rhs;
-        }
+        operator () (int lhs, int rhs) const { return lhs + rhs; }
       };
 
       PtrStep<float> vmap_g_curr;
